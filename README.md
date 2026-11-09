@@ -1,0 +1,1 @@
+Simple WoW Forever disenchant helper.  Small button sits on your screen that will glow when you have items in your bags that you can disenchant.  Provides the number or items and a history of what you have DE'd and what you received from the DE.
