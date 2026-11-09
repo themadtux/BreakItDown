@@ -1,0 +1,58 @@
+BreakItDown changelog
+
+0.0.8b
+- New History button after Skip. Opens a History window under the main window (or above it
+  if there is no room) listing what you disenchanted and what you received.
+- History is saved between sessions (newest first, last 200 kept). Scroll with the mouse wheel;
+  Clear needs a second click to confirm. Hover a row to see the disenchanted item's tooltip.
+- The main window now slides closed back into the icon, as well as sliding open.
+  Closing it also closes the History window.
+
+0.0.7b
+- Fix: left-click on the icon now disenchants. The icon only listens for mouse-up clicks, and the
+  game could be waiting for mouse-down instead; it is now set to always act on mouse-up.
+- The icon refreshes its disenchant target right before each left-click.
+- New command: /bid debug (prints queue size, spell name and the icon's macro).
+
+0.0.6b
+- New round icon button that you can drag anywhere on screen (out of combat).
+- Ring is orange normally and turns green when something in your bags can be disenchanted;
+  a small number shows how many are queued.
+- Left-click the icon: disenchant the next item. Right-click: open/close the main window.
+- The main window now slides out from the icon, opening away from the nearest screen edge.
+- The main window is anchored to the icon (no longer dragged separately) and no longer
+  opens automatically at login.
+- New commands: /bid icon (show/hide the icon). /bid reset now resets the icon position.
+
+0.0.5b
+- Materials now show their full item name (e.g. "Greater Magic Essence") looked up from the game.
+- Removed the percentage chances (no real data yet).
+- The materials list is shifted up 12px and made a little wider for the longer names.
+- Data.lua now picks materials by item level using a best-effort table (unverified for Forever).
+
+0.0.4b
+- Material icons (16x16) moved into the "breaks into" list, to the left of each material name.
+- Each material now shows its chance of being received after the name (e.g. ~75%).
+- Chances are placeholder estimates for now (shown with "~"); Data.lua entries marked
+  exact = true show without the "~".
+- Item name field is wider now that the icons no longer sit beside it.
+
+0.0.3b
+- Window background is now #191612 (matched to the Friends window), with a #333333 border
+  and warmer button colours to go with it.
+
+0.0.2b
+- Item icon in the compact window is now 24x24.
+- Removed the box around the "Breaks into" text.
+- Added 16x16 icons of the materials an item breaks into, shown right after the item name
+  (hover an icon for its tooltip).
+- Window is slightly wider (480x100) to fit the new icons.
+- Data.lua now returns { name, itemID } entries so each material has an icon.
+
+0.0.1b
+- First build: compact view only.
+- Scans bags for disenchantable gear (uncommon to epic weapons and armor).
+- Compact window: item icon, quality-coloured name, Disenchant and Skip buttons,
+  "breaks into" box, close button, and an in-queue counter.
+- EllesmereUI-style flat dark theme; follows the EllesmereUI accent colour when available.
+- Commands: /bid, /bid refresh, /bid reset, /bid version.

@@ -1,0 +1,16 @@
+## Interface: 16001, 16000, 16002, 16003
+## Title: BreakItDown
+## Notes: Lists the items in your bags that you can disenchant, one at a time. EllesmereUI-style look.
+## Author: You
+## Version: 0.0.8b
+## SavedVariables: BreakItDownDB
+## OptionalDeps: EllesmereUI
+
+Theme.lua
+Data.lua
+Scanner.lua
+Core.lua
+CompactView.lua
+Icon.lua
+History.lua
+HistoryView.lua
